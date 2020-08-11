@@ -1,5 +1,5 @@
 # employee-directory
-
+https://derekdespo.github.io/employee-directory/
 ## Description
 The employee directory application is basically an example application for how a real employee directory web application would work. The only difference is here I'm using the randomuser api to populate the field of employees. At random 100 employees are being generated for the page. There is also a searchbar that will allow the apps user to find who they are looking for more quickly.
 
