@@ -3,10 +3,12 @@ import API from "../utils/API";
 import Search from "./Search"
 import "./comp.css"
 
+// Function that creates the main section of the page that will include the dynamic content from the api
 function Main () {
     const [users, setUsers] = useState([]);
     const [filteredUsers, setFilteredUsers] = useState([]);
 
+    // Function to grab data from the api
     useEffect(() => {
         API.getEmployees().then(results => {
             console.log(results.data.results);
@@ -15,6 +17,7 @@ function Main () {
         })
     },[])
 
+    // Function that will allow the search bar  to filter through the dynamic table of employees
     const handleSearchChange = event => {
         const searchTerm = event.target.value
         const filteredList = users.filter (user => {
@@ -24,6 +27,7 @@ function Main () {
         setFilteredUsers (filteredList)
     }
 
+    // Function to sort the dynamic table based on its categories....currently bugged, works in console log but not on page
     const sort = () => {
         console.log("sort")
         const sortedList = filteredUsers.sort((a, b) => {
@@ -33,6 +37,7 @@ function Main () {
         setFilteredUsers(sortedList)
     }
     return (
+        // content that we want to return from the main function including the search component and a table with dynamic content from the api
         <div className="main">
             <div class="container">
             <Search handleSearchChange={handleSearchChange} />

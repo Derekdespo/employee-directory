@@ -1,7 +1,7 @@
 import React from "react";
 import "./comp.css"
 
-
+//Function that creates the header for our page
 function Header () {
     return (
         <div className="header" id="header">
