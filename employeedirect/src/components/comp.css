@@ -1,0 +1,23 @@
+#header {
+    background-color: rgb(9, 172, 212);
+    color: rgb(13, 97, 175);
+    padding: 45px;
+    box-shadow: rgba(0, 0, 0, 0.55) 1px 4px 10px 2px;
+    margin-bottom: 15px;
+    text-shadow: azure 2px 2px;
+}
+
+#inputBox {
+    box-shadow: rgba(0, 0, 0, 0.55) 1px 4px 10px 1px;
+    margin-bottom: 15px;
+}
+
+#table, #thead {
+    box-shadow: rgba(9, 111, 158, 0.55) 1px 4px 10px 1px;
+}
+
+td {
+    color: rgb(9, 172, 212);
+    font-weight: 500;
+}
+
